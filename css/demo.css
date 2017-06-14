@@ -27,7 +27,7 @@ a {
 	color:#7f7f7f;  
 	text-decoration: none;   
 }       
-   
+    
 a:hover {	  
 	color:#a72b63; 
 }
@@ -279,8 +279,8 @@ svg#circle {
 
 .scroll{
 	position: absolute;
-	margin-top:-200px !important;	
-	z-index: 5000;
+	margin-top:-150px !important;	
+	z-index: 6000;	
 }
 
 .scroll svg{
@@ -684,9 +684,9 @@ figure img{
 }
 
 @media screen and (max-width: 1366px) {
-.scroll{	
+/*.scroll{	
 	margin-top:-150px !important;		
-}
+}*/
 
 .scroll svg{	
 	width:3% !important;		
@@ -868,9 +868,9 @@ figure img{
 
 
 @media screen and (max-width: 980px) { 
-.scroll{	
+/*.scroll{	
 	margin-top:-140px !important;		
-}
+}*/
 
 .containerHead {   
     margin: -10% auto !important;  
@@ -1197,9 +1197,9 @@ article p, article p:active, article .show{
 }
 
 @media screen and (max-width: 768px){
-.scroll{	
+/*.scroll{	
 	margin-top:-130px !important;		
-}
+}*/
 
 .scroll svg{	
 	width:5% !important;		
@@ -1254,10 +1254,10 @@ article p, article p:active, article .show{
     margin-top: -50% !important;
 }
 
-.scroll{	
+/*.scroll{	
 	margin-top:-130px !important;	
 	display: none;	
-}
+}*/
 
 }
 
