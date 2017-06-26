@@ -3,8 +3,7 @@
  	 	$('.nav #hamburger').click(function(){
  		$('.nav ul').slideToggle('fast');
  	}); 
- 	 	 
-
+ 	 	  
  	var navOffset = $(".nav").offset().top;  
  	
  	$(window).scroll(function(){

@@ -1,11 +1,85 @@
 /* Author Ace A Lio */ 
- 
+  
 body{
 	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
 }
 
-header{
+/* Landing Pg */
+ /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100%;
+    margin:0;
+}
+
+h1, p{
+    font-family: "Raleway";
+}
+
+p{
+    color: #a72b63;    
+}
+
+.bgimg {
+    /* Background image */
+    /*background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');*/
+    background-color:#a72b63; 
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+}
+
+/* Position text in the top-left corner */
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;    
+}
+
+.bottomleft p{
+    color:#fff;
+}
+
+/* Position text in the middle */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+    margin: auto;
+    width: 40%;
+} 
+
+/* UNDER CONSTRUCTION */
+.coming h1{
+	display: none;
+}
+/* EOF */
+
+header{ 
 	top:0;
 	width:100%;
 	height:80px;	
@@ -18,7 +92,7 @@ header nav{
 	margin: .3% auto;
 }
 
-header nav ul{
+header nav ul{ 
 	width:400px;
 	list-style: none;
 	margin:20px auto;	
@@ -57,6 +131,7 @@ h1{
 	font-size: 2.4em;
 	font-weight: normal;	
 	font-weight: bold;
+	font-family: "Raleway";
 }
 
 h2{	
@@ -71,6 +146,7 @@ p{
 	font-size: 1.4em;
 	line-height: 1.2em;	
 	text-align: left;
+	font-family: "Raleway";
 }
 
 #home{	
@@ -539,8 +615,7 @@ input {
   height: 50px;
   padding: 0px 15px 0px 15px;  
   background: transparent;
-  outline: none;
-  /*color: #726659;*/
+  outline: none; 
   color: #fff;
   border:1px solid #fff;
   border-bottom: none;  
@@ -551,9 +626,7 @@ input {
 }
 
 input:hover {
-  /*background: #b3aca7;*/
-  background: #000;
-  /*color: #e2dedb;*/
+  background: #000; 
   color:#fff !important;
 }
 
@@ -564,13 +637,10 @@ textarea {
   max-height: 110px;
   padding: 15px;  
   background: transparent;
-  outline: none;  
-  /*color: #726659;*/
-  color:#fff;
-  /*color:#fff !important;*/
+  outline: none;    
+  color:#fff; 
   font-family: 'Raleway', sans-serif;
-  font-size: 0.875em;  
-  /*border: solid 1px #b3aca7;*/
+  font-size: 0.875em;   
   border:1px solid #fff;  
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -578,10 +648,8 @@ textarea {
   -ms-transition: all 0.3s ease-in-out;
 }
 
-textarea:hover {
-  /*background: #b3aca7;*/
-  background: #000;
-  /*color: #e2dedb;*/
+textarea:hover {  
+  background: #000;  
   color:#fff !important;
 }
 
@@ -592,16 +660,12 @@ textarea:hover {
   margin: -5px 0px 0px 0px;
   
   font-family: 'Raleway', sans-serif;
-  font-size: 0.875em;
-  /*color: #b3aca7;*/
+  font-size: 0.875em; 
   color:#fff;
-  /*color:#fff !important;*/
   border:1px solid #fff;
   
   outline:none;
   cursor: pointer;
-  
-  /*border: solid 1px #b3aca7;*/
   border-top: none;
 }
 
@@ -683,6 +747,11 @@ footer nav li a:hover{
 
 }
 
+@media only screen and (max-width:1280px){
+
+}
+
+
 @media only screen and (max-width:980px){
 
 #home .wrapper{
@@ -711,7 +780,6 @@ footer nav li a:hover{
 }
 
 @media only screen and (max-width:800px){
-
 #home .wrapper{
 	margin-top: 20%;
 }
@@ -744,36 +812,108 @@ footer nav li a:hover{
 
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width:360px){
+
+}
+
 @media only screen and (max-width:360px){
+/* UNDER CONSTRUCTION */
+/*section{
+	display:none;
+}
+.coming h1{
+	position: absolute;
+	display: block;
+	color:#ffac00;	
+	font-size:2em !important;
+	width:50% !important;
+	margin-top:30% !important;
+	margin-left:65px ;
+	text-align: center;	
+	z-index: 6000;
+}*/
+
+/* EOF */
 
 header{
 	margin-top:0;	
-}
+	width:150% !important;	
+	 display: inline-block !important;
+} 
 
 header ul li{
-	margin-top: -20px;
-	margin-left:-50px;
+	margin-top: -20px;	
+	margin-left:-92% !important;		
 }
 
-header nav li a{	
-	float: left;	
+header nav li a{		
 	width: 100%;	
+	font-size:2em !important;
 	color:#fff;  
 	padding-top:20px; 
     padding-left:20px;    
     text-decoration: none;    
     background-color: #000;
-    margin:0; 
+    margin:0;       
 }
 
 header nav a:hover, nav a.selected{
     color: #404b43;
-    background-color: #DDDDDD;
+    background-color: #DDDDDD;  
+}
+
+nav li{		
+	margin-left:none;		
+}
+
+section{
+	width:207% !important;	
+	margin-left:-8px !important;
+}
+
+footer{	
+	margin-left:-10px;	
+	width:100% !important;
+}
+
+footer nav ul{
+	margin-left:-25px;	
+}
+
+#home .wrapper{
+	margin-top:45% !important;
+	width:100% !important;	
+	text-align: center;
+}
+
+#home .wrapper td{
+	font-size: 2em !important;
+}
+
+#fetch .wrapper{
+	margin-top:45% !important;
+	width:100% !important;	
+	text-align: center;
+}
+
+#fetch .wrapper #title{
+	margin-top: -40% !important;
+}
+
+#fetch .wrapper td{
+	font-size: 2em !important;
+}
+
+#gallery .wrapper{
+	margin-top:-45% !important;
+	width:100% !important;	
+	text-align: center;
 }
 
 .wrapper{
 	margin-top:500px;
 	float: left;
+	text-align: center;
 }
 
 h2{

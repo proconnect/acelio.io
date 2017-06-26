@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
- 
+  
 	// Hamburger Menu
 	// listen for when the user clicks on the hamburger icon
 	// HAMBURGLERv2

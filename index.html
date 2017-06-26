@@ -7,19 +7,21 @@
 		<title>Portfolio</title>		
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" />
 		<link rel="stylesheet" href="fonts/Raleway/Raleway-regular.ttf">
+		<link rel="stylesheet" href="fonts/Fa/fontawesome-webfont.ttf">
 		<href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />	
 		<link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css">	
 		<link rel="stylesheet" href="css/svgNav.css">
 		<link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">	 
 		<script src="js/modernizr.custom.js"></script>	 
-	</head>        
-	<body>          
+	</head>         
+	<body>           
 		<!-- <div class="status"></div> --> 		         
 		<div id="home" class="container">      
-				<header class="clearfix"> 
+				<header class="clearfix">  
 				<div class="containerHead">				  
 					<img src="images/logoWhite.png" alt="">	 
 					       	  
@@ -54,11 +56,17 @@
 							  </a>
 							     </g>
 							</svg>
-						</nav>
+						</nav> 
 					</div>					 
 
 					<div class="nav">
-						<i class="fa fa-bars fa-lg" id="hamburger"></i>
+						<div id="container">
+						  <i class="fa fa-bars fa-lg" id="hamburger" onclick="myFunction(this)">	
+							  <div class="bar1"></div>
+							  <div class="bar2"></div>
+							  <div class="bar3"></div>	
+						  </i>
+						</div>				 
 						<ul class="clearfix">
 							<li><a href="#">Home</a></li>
 							<li><a href="#bio">About Me</a></li>
@@ -75,7 +83,7 @@
 							</li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
-					</div>										
+					</div>					  									
 			</header>			
 				<div class="scroll">
 					<div class="bounce">
@@ -146,7 +154,7 @@
 							        <a href="images/modal/process/15.png" title="USER TEST"><img src="" alt="" style="opacity:0"></a>
 
 							     	<a href="index.html" title="THE END"><img src="" alt="" style="opacity:0"></a>							           
-							 	</ul>
+							 	</ul> 
 							</div>
 											
 					</figure>		                    
@@ -163,7 +171,7 @@
 					<svg id="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" fill="#a72b63" preserveAspectRatio="none" style="margin-top:200px">
                   <path d="M0 100 C 20 0 50 0 100 100 Z"/> 
                 </svg> 
-				</section>	
+				</section>	 
 							
 				<section id="dogs" class="cbp-so-section" style="background-color:#a72b63; margin-top:-245px;">
 					<figure class="cbp-so-side cbp-so-side-left">
@@ -246,17 +254,17 @@
 								</div>
   								<form id="up" action="">
 										<div class="wrapper">
-										   <i class="fa fa-user" style="margin-left:-130px; background-color:#ddd;"></i>        <!-- user icon for name field -->
+										   <!--<i class="fa fa-user" style="margin-left:-130px;  color:#000;"></i>-->        <!-- user icon for name field -->
 										   Ace Lio <br>
 										</div>
 
 										 <div class="wrapper">
-										   <i class="fa fa-envelope-o" style="margin-left:-60px; background-color:#ddd;"></i> <!-- envelope icon for email field -->
+										  <!-- <i class="fa fa-envelope-o" style="margin-left:-60px; color:#000;"></i> --><!-- envelope icon for email field -->
 										   info@acelio.co.nz <br>
 										</div>
 
 										 <div class="wrapper">
-										   <i class="fa fa-file-text-o" style="margin-left:-62px; background-color:#ddd;"></i>    <!-- file text icon for subject field -->
+										   <!--<i class="fa fa-file-text-o" style="margin-left:-62px; color:#000;"></i> -->   <!-- file text icon for subject field -->
 										   +64 21 023 59697
 										</div>									
 										
@@ -283,6 +291,12 @@
 		<script src="js/classie.js"></script>
 		<script src="js/cbpScroller.js"></script>	
 		<script src="js/main.js"></script>
+		
+		<!-- Hamburger "X" -->
+		<script>
+			function myFunction(x) {
+		    	x.classList.toggle("change");}
+		</script>
 			
 		<script>
 			new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
