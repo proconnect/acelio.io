@@ -1,55 +1,136 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
- 	<meta charset="UTF-8">
- 	<link rel="stylesheet" href="css/main.css">
- 	<title>Under Construction</title>
- </head>
- <body>
- 	 <div class="bgimg">
-  <div class="topleft">
-    <!-- <p>Logo</p> -->
-  </div>
-  <div class="middle">
-    <h1>Coming Soon 2017</h1>
-    <hr>
-    <p id="demo" style="font-size:30px"></p> 
-  </div>
-  <div class="bottomleft">
-    <p>Whistle Box</p>
-  </div>
-</div>  	
+<!doctype html>
+<html lang="en" class="no-js">
+<head>  
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 
-<script src="main.js"></script>
-<script>
-	// Set the date we're counting down to
-var countDownDate = new Date("Sept 1, 2017 15:37:25").getTime();
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Whistle Box</title> 
+</head>  
+<body id="top">
+	<div id="gap"></div>
+	<header class="cd-header" data-type="slider-item" style="background-color:#fff; margin-top:-245px;">		
+		<svg id="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" fill="#27c0c1" preserveAspectRatio="none" style="margin-top:200px;">
+                  <path d="M0 100 C 20 0 54 0 100 100 Z"/> 
+                </svg> 
+		<!-- <h1>Prototype</h1> -->
+		<div id="fillIt" style="background-color:#27c0c1; margin-top:-5px;">
+			<img src="img/6.png" alt="img01" style="width:50%; margin-top:146px;">	
+			
+			<p><span>ROAD RAGE 101 - 'Stress Reliever'</span><br>Drivers who get behind the wheel of a vehicle, become vulnerable to certain levels of pain. 
+			The 'Whistlebox' app will help users stay in control of their emotions.
+			</p>						
+		</div>
+		<!-- <img src="img/6.png" alt="img01" style="width:40%; margin-top:-4px;"> -->
+		<svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" fill="#27c0c1" preserveAspectRatio="none" style="position:absolute; margin-top:-3px; margin-left:-0px;">
+                <path d="M0 0 C 50 100 80 100 100 0 Z"/> <!-- ### section -->
+              </svg> 
+	</header>
+	
+	<section class="cd-fixed-background img-1" data-type="slider-item">
+		<div class="cd-content">			
+			<p><span>WHY WHISTLEBOX?</span><br>©2016<br>
+				<p>Whistlebox maintains quality of life by helping users take control of stress and avoid what they fear most on our roads. 
+					The 24/7 stress reliever starts from home. 
+				It's a tool that reminds the user they have an obligation to their loved ones and to road safety. 
+				It re-calibrates the user's mind to learn new habits to break old habits.
+				Whistlebox is powerful enough to ensure that people feel safe around managed stress and gauge whether users are fit to drive. 
+				A system that is the proof or yardstick, that serves it's purpose by saving lives. Anti-social behaviour like anger can be 
+				avoided when stress is managed on a personal level. 
+			</p>
+		</div>
+	</section>
 
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
+	<section class="cd-fixed-background img-2" data-type="slider-item">
+		<div class="cd-content light-background">			
+			<p><span>PAIR WITH FITBIT </span><br>Explore biometrics and wearable technology at your finger tips</p><br>
+			<img src="img/fitbit.jpg">			
+		</div>
+	</section>
 
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script>
- </body>
- </html>
+	<section class="cd-fixed-background img-3" data-type="slider-item">
+			<div class="cd-content light-background">
+				<p><span>BE REMINDED</span><br>That you have a family to go home to</p><br>
+				<img src="img/gallery.jpg">					
+			</div>
+		</section>
+
+	<section class="cd-fixed-background img-4" data-type="slider-item">
+		<div class="cd-content light-background">			
+			<p><span>DRIVING AT NIGHT</span><br>Experience the art of safe driving with line of sight 'Headup Display' (HUD) technology</p><br>
+			<img src="img/nite.jpg">			
+		</div>
+	</section>
+
+	<section class="cd-fixed-background img-1" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>DISCOVER</span><br>Avoid stress, avoid road rage to keep you and your passengers safe</p><br>
+			<img src="img/image.png">						
+		</div>
+	</section>
+	
+	<section class="cd-fixed-background img-2" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>TEST</span><br>Avoid stress from peak hour traffic while relaxing to calm music.</p>
+		</div>
+	</section>
+	<section class="cd-fixed-background img-3" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>TEST</span><br>My UX Formula available upon request</p>
+		</div>
+	</section>
+	<section class="cd-fixed-background img-4" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>TEST</span><br>My UX Formula available upon request</p>
+		</div>
+	</section>
+	<section class="cd-fixed-background img-1" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>TEST</span><br>My UX Formula available upon request</p>
+		</div>
+	</section>
+	<section class="cd-fixed-background img-2" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>TEST</span><br>My UX Formula available upon request</p>
+		</div>
+	</section>
+	<section class="cd-fixed-background img-3" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>TEST</span><br>My UX Formula available upon request</p>
+		</div>
+	</section>
+	<section class="cd-fixed-background img-4" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>TEST</span><br>My UX Formula available upon request</p>
+		</div>
+	</section>
+	<section class="cd-fixed-background img-1" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>TEST</span><br>My UX Formula available upon request</p>
+		</div>
+	</section>
+	<section class="cd-fixed-background img-2" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>TEST</span><br>My UX Formula available upon request</p>
+		</div>
+	</section>
+	<section class="cd-fixed-background img-3" data-type="slider-item">
+		<div class="cd-content light-background">
+			<p><span>TEST</span><br>My UX Formula available upon request</p>
+		</div>
+	</section>
+		
+	<nav>
+		<ul class="cd-vertical-nav">			
+				<li><a href="#top" class="cd-prev inactive">Next</a></li>
+				<!-- <li><a href="#0" class="cd-next">Prev</a></li> -->
+		</ul> <!-- cd-vertical-nav -->
+	</nav> 
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

@@ -1,4 +1,9 @@
-/* General Blueprint Style */
+/* General Blueprint Style 
+Author Styles:
+Ace Lio 
+2018
+*/ 
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @font-face {
 	font-family: 'bpicons';
@@ -7,14 +12,14 @@
 		url('../fonts/bpicons/bpicons.woff') format('woff'),
 		url('../fonts/bpicons/bpicons.ttf') format('truetype'),
 		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
-	font-weight: normal;
+	font-weight: normal; 
 	font-style: normal;
-} /* Made with http://icomoon.io/ */
+} 
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0;}
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
@@ -22,10 +27,9 @@ body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #fff;   
 }  
-
+ 
 .fa-lg {
-   display: none !important;
-   /*border:2px solid #ffac00;*/
+   display: none !important;   
 }
  
 a { 	  
@@ -65,6 +69,30 @@ figure img{
 	z-index: 500;
 }
 
+#spotx figure img{
+	width:60% !important;
+	margin-top:25% !important;	
+}
+
+#whistlebox figure img{
+	width:60% !important;
+	margin-top:20% !important;
+}
+
+#fou figure img{	
+	margin-top:16% !important;
+	width:60% !important;
+}
+
+#canines figure img{
+	margin-top:3% !important;
+	width:60% !important;
+}
+
+#contact figure form{
+	margin-top:-22px !important;	
+}
+
 h1 {
 	position: relative;	
 	font-family: 'Raleway', Maven Pro, sans-serif;    
@@ -92,31 +120,31 @@ h2 {
     width: 100%;      
 }
 
-#ccf article{
+#allblacks article{
 	margin-top:120px !important;	
 }
 
-#ccf figure{
+#allblacks figure{
 	margin-top:120px !important;
 }
 
-#dogs article{
+#whistlebox article{
 	margin-top:120px !important;
 }
 
-#dogs figure{
+#whistlebox figure{
 	margin-top:120px !important;
 }
 
-#el3phant article{
+#posse article{
 	margin-top:120px !important;
 }
 
-#el3phant figure{
+#posse figure{
 	margin-top:175px !important;
 }
 
-#el3phant figure img{
+#posse figure img{
 	margin-top:120px !important;
 }
 
@@ -136,11 +164,7 @@ h2 {
 	margin-top:120px !important;
 }
 
-#wb article{
-	margin-top:120px !important;
-}
-
-#wb figure{
+#canines figure{
 	margin-top:120px !important;
 }
 
@@ -194,7 +218,11 @@ header nav{
 
 /* Sticky Nav */
 .nav{
-	position: relative;
+	position:sticky;
+	position: -webkit-sticky;
+  	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky;
 	z-index: 5000;
 	margin: 100vh 0 40px 0;	
 	text-align: center;	
@@ -205,7 +233,7 @@ header nav{
     text-align: center;
     position: absolute;
     background-color: #f9f9f9;
-    width: 119.067px !important;
+    width:150px !important;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -248,12 +276,61 @@ header nav{
 	padding:10px 25px;	
 	background-color: rgba(0, 0, 0, 0.3);
 	border-right:2px solid #d5dce4;
+	border-left:2px solid #d5dce4;
 	color:#fff;
 	font-size:18px !important;
 	font-weight:bold;
 	cursor: pointer;
 	font-weight: normal;
 	text-align: center;
+	width:150px;	
+}
+
+.nav ul li:first-child{
+	border-right:3px solid #d5dce4 !important;
+	-webkit-border-right:3px solid #d5dce4 !important;	
+  	-moz-border-right:3px solid #d5dce4 !important;
+  	-ms-border-right:3px solid #d5dce4 !important;
+  	-o-border-right:3px solid #d5dce4 !important;
+    border-left:none !important;    
+    -webkit-border-left:none !important;
+  	-moz-border-left:none !important;
+  	-ms-border-left:none !important;
+  	-o-border-left:none !important;
+}
+
+li:nth-child(2){
+	border-right:1px solid #d5dce4;
+	 -webkit-border-right:1px solid #d5dce4;
+  	-moz-border-right:1px solid #d5dce4;
+  	-ms-border-right:1px solid #d5dce4;
+  	-o-border-right:1px solid #d5dce4;	
+}
+
+li:nth-last-child(2){
+    border-right:1px solid #d5dce4;
+     -webkit-border-right:1px solid #d5dce4;
+  	-moz-border-right:1px solid #d5dce4;
+  	-ms-border-right:1px solid #d5dce4;
+  	-o-border-right:1px solid #d5dce4;
+	border-left:none !important;
+	 -webkit-border-left:none !important;
+  	-moz-border-left:none !important;
+  	-ms-border-left:none !important;
+  	-o-border-left:none !important;
+}
+
+.nav ul li a:last-child{    
+    border-right:none !important;
+     -webkit-border-right:none !important;
+  	-moz-border-right:none !important;
+  	-ms-border-right:none !important;
+  	-o-border-right:none !important;
+    border-left:none !important;
+     -webkit-border-left:none !important;
+  	-moz-border-left:none !important;
+  	-ms-border-left:none !important;
+  	-o-border-left:none !important;
 }
 
 strong{
@@ -268,7 +345,7 @@ article h2{
 }
  
 article p .hide{
-	display: none;
+	display: none;		
 }
 
 nav #myImage2{	
@@ -312,24 +389,24 @@ svg#circle {
   }
 }
 
-#ccf p, #ccf p:active, #ccf .show{	
+#allblacks p, #allblacks p:active, #allblacks .show{	
 	font-size:1.2em;	
 	color: #7f7f7f;
 	width:60%;
 	float: right;	
 }
 
-#dogs p, #dogs p:active, #dogs .show{	
+#whistlebox p, #whistlebox p:active, #whistlebox .show{	
 	font-size:1.2em;
 	width:60%;
 	float: left;	
 }
 
-#el3phant article{	
+#posse article{	
 	overflow: hidden;	
 }
 
-#el3phant p, #el3phant p:active, #el3phant .show{	
+#posse p, #posse p:active, #posse .show{	
 	font-size:1.2em;
 	color: #7f7f7f;
 	width:60%;
@@ -357,11 +434,11 @@ svg#circle {
 	float: right;	
 }
 
-#wb p{	
+#canines p{	
 	color:#fff !important;
 }
 
-#wb p, #wb p:active, #wb .show{	
+#canines p, #canines p:active, #canines .show{	
 	font-size:1.2em;	
 }
 
@@ -473,8 +550,8 @@ h3 {
 p{
 	margin:-20% auto;	
 }
-
-#dogs article p button{
+ 
+#whistlebox article p button{
 	background-color: #ffac00;
 }
 
@@ -681,56 +758,76 @@ li .resumeNext:hover{
 	display: none;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0){
-  
-}
-
 @media screen and (max-width: 1798px) {
 figure img{	
+	margin-top:30% !important;	
+}
+
+#whistlebox figure img{
 	margin-top:25% !important;
+}
+
+#posse figure img{
+	margin-top:19% !important;
+}
+
+#fou figure img{
+	margin-top:25% !important;
+}
+
+#spotx figure img{
+	margin-top:28% !important;
+}
+
+#canines figure img{
+	margin-top:9% !important;
+}
+
+#contact figure{
+	margin-top:11% !important;
 }
 	
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 1798px) {
-  
-}
-
 @media screen and (max-width: 1366px) {
-/*.scroll{	
-	margin-top:-150px !important;		
-}*/
-
 .scroll svg{	
 	width:3% !important;		
 } 
 
-#ccf article{
+#allblacks article{
 	margin-top:80px !important;		
 }
 
-#ccf figure{
+#allblacks figure{
 	margin-top:80px !important;
 }
 
-#dogs article{
+#allblacks figure img{
+	margin-top:160px !important;
+}
+
+#whistlebox article{
 	margin-top:60px !important;
 }
 
-#dogs figure{
+#whistlebox figure{
 	margin-top:80px !important;
 }
 
-#el3phant article{
+#whistlebox figure img{
+	margin-top:160px !important;	
+}
+
+#posse article{
 	margin-top:80px !important;
 }
 
-#el3phant figure{
+#posse figure{
 	margin-top:175px !important;	
 }
 
-#el3phant figure img{
-	margin-top:80px !important;
+#posse figure img{
+	margin-top:60px !important;
 }
 
 #fou article{
@@ -741,6 +838,10 @@ figure img{
 	margin-top:80px !important;
 }
 
+#fou figure img{
+	margin-top:160px !important;
+}
+
 #spotx article{
 	margin-top:80px !important;
 }
@@ -749,12 +850,20 @@ figure img{
 	margin-top:80px !important;
 }
 
-#wb article{
+#spotx figure img{
+	margin-top:190px !important;
+}
+
+#canines article{
 	margin-top:80px !important;
 }
 
-#wb figure{
+#canines figure{
 	margin-top:80px !important;
+}
+
+#canines figure img{
+	margin-top:160px !important;
 }
 
 #contact article{
@@ -767,36 +876,41 @@ figure img{
 	
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 1366px) {
-  
-}
-
 @media screen and (max-width: 1280px) {
-#ccf article{
+#allblacks article{
 	margin-top:40px !important;		
 }
 
-#ccf figure{
+#allblacks figure{
 	margin-top:60px !important;
 }
 
-#dogs article{
+#allblacks figure img{
+	margin-top:150px !important;
+}
+
+#whistlebox article{
 	margin-top:20px !important;
 }
 
-#dogs figure{
+#whistlebox figure{
 	margin-top:60px !important;
 }
 
-#el3phant article{
+#whistlebox figure img {
+    width: 60% !important;
+    margin-top: 140px !important;
+}
+
+#posse article{
 	margin-top:50px !important;
 }
 
-#el3phant figure{
-	margin-top:175px !important;	
+#posse figure{
+	margin-top:145px !important;		
 }
 
-#el3phant figure img{
+#posse figure img{
 	margin-top:60px !important;
 }
 
@@ -806,6 +920,10 @@ figure img{
 
 #fou figure{
 	margin-top:60px !important;
+}
+
+#fou figure img{
+	margin-top:170px !important;
 }
 
 #spotx article{
@@ -816,12 +934,20 @@ figure img{
 	margin-top:60px !important;
 }
 
-#wb article{
+#spotx figure img{
+	margin-top:170px !important;
+}
+
+#canines article{
 	margin-top:60px !important;
 }
 
-#wb figure{
+#canines figure{
 	margin-top:60px !important;
+}
+
+#canines figure img{
+	margin-top:170px !important;
 }
 
 #contact article{
@@ -834,19 +960,11 @@ figure img{
 
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 1280px) {
-  
-}
-
 @media screen and (max-width: 1228px) {
 figure img{	
 	margin-top:32% !important;
 }
 
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 1228px) {
-  
 }
 
 @media screen and (max-width: 1162px) { 
@@ -856,13 +974,13 @@ figure img{
 
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 1162px) {
-  
-}
-
 @media screen and (max-width: 1080px) {
 .containerHead {   
     margin: 0 auto !important;  
+}
+
+article p{	
+	width:100% !important;
 }
 
 #bio article{
@@ -873,11 +991,26 @@ figure img{
 	margin-top:80px !important;
 }
 
-#ccf article{
+#allblacks article{
 	margin-top:30px !important;		
 }
 
-#dogs article{
+#allblacks figure img{
+	width:80% !important;
+	margin-top:110px !important;
+}
+
+#whistlebox article{
+	margin-top:20px !important;
+}
+
+#whistlebox figure img{
+	width:60% !important;
+	margin-top:120px !important;
+}
+
+#posse figure img{
+	width:80% !important;
 	margin-top:20px !important;
 }
 
@@ -885,19 +1018,33 @@ figure img{
 	margin-top:40px !important;
 }
 
+#fou figure img{
+	margin-top:140px !important;
+}
+
 #spotx article{
 	margin-top:30px !important;
 }
 
-#wb article{
+#spotx figure img{
+	width:80% !important;
+	margin-top:110px !important;
+}
+
+#canines article{
 	margin-top:70px !important;
 }
 
-} 
-
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 1080px) {
-  
+#canines figure img{
+	width:80% !important;
+	margin-top:150px !important;
 }
+
+#contact figure form{
+	margin-top:-15px !important;
+}
+
+} 
 
 @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 980px) {
 .containerHead {   
@@ -924,8 +1071,7 @@ header img{
     padding-bottom: 10px;
     cursor: pointer;     
     border: 0;
-    text-indent: 200%;
-    /*overflow: hidden;*/
+    text-indent: 200%;   
     float: left;    
     background-color:#ffac00;   
     border-radius: 3px;
@@ -934,7 +1080,7 @@ header img{
     height: 50px;
     outline: none;
     -webkit-transition: all 400ms ease;
-    transition: all 400ms ease;
+    transition: all 400ms ease;    
 }
 
 .bar1, .bar2, .bar3 {
@@ -1039,8 +1185,6 @@ header img{
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-/* eof */
-
 .nav ul{
 	z-index: 5000;
 	width:100%;
@@ -1096,83 +1240,87 @@ header img{
 
 article p, article p:active, article .show{
 	margin-top:-34% !important;	
+	-webkit-margin-top:-34% !important;	
+  	-moz-margin-top:-34% !important;	
+  	-ms-margin-top:-34% !important;	
+  	-o-margin-top:-34% !important;	
 	line-height: 28px !important;
-	width: 100% !important;	
+	width: 100% !important;		
 }
 
-#ccf article{	
+#allblacks article{	
 	margin-top: 5% !important;
 	text-align: center !important;	
 	width:100% !important;  			
 }
 
-#ccf article h1{	
+#allblacks article h1{	
 	margin-top:15% !important; 		
 }
 
-#ccf article h2{
+#allblacks article h2{
 	margin-top:-30% !important;
 }
 
-#ccf figure{
-	margin-top:-20% !important;
+#allblacks figure{
+	margin-top:-27% !important;
 	width:100% !important; 		
 }
 
-#ccf figure img{
-	margin-left:15% !important;
-	margin-right:15% !important;
-	margin-top:0% !important;	
+#allblacks figure img{
+	margin-left:10% !important;
+	margin-right:20% !important;
+	margin-top:0% !important;		
 }
 
-#dogs article{	
+#whistlebox article{	
 	margin-top: -23% !important;
 	text-align: center !important;	
 	width:100% !important;  			
 }
 
-#dogs article h1{	
+#whistlebox article h1{	
 	margin-top:15% !important; 		
 }
 
-#dogs article h2{
+#whistlebox article h2{
 	margin-top:-30% !important;
 }
 
-#dogs figure{
+#whistlebox figure{
 	margin-top:10% !important;
 	width:100% !important; 		
 }
 
-#dogs figure img{
-	margin-left:15% !important;
-	margin-right:15% !important;
+#whistlebox figure img{
+	margin-left:9% !important;
+	margin-right:21% !important;
 	margin-top:15% !important;	
 }
 
-#el3phant article{	
+#posse article{	
 	margin-top: 5% !important;
 	text-align: center !important;	
 	width:100% !important;  			
 }
 
-#el3phant article h1{	
+#posse article h1{	
 	margin-top:15% !important; 		
 }
 
-#el3phant article h2{
+#posse article h2{
 	margin-top:-30% !important;
 }
 
-#el3phant figure{
-	margin-top:-20% !important;
+#posse figure{
+	margin-top:-27% !important;
 	width:100% !important; 		
 }
 
-#el3phant figure img{
-	margin-left:15% !important;
-	margin-right:15% !important;
-	margin-top:0% !important;	
+#posse figure img{
+	margin-left:10% !important;
+	margin-right:20% !important;
+	margin-top:0 !important;	
 }
 
 #fou article{	
@@ -1195,8 +1343,8 @@ article p, article p:active, article .show{
 }
 
 #fou figure img{
-	margin-left:15% !important;
-	margin-right:15% !important;
+	margin-left:10% !important;
+	margin-right:20% !important;
 	margin-top:15% !important;	
 }
 
@@ -1220,33 +1368,33 @@ article p, article p:active, article .show{
 }
 
 #spotx figure img{
-	margin-left:15% !important;
-	margin-right:15% !important;
+	margin-left:10% !important;
+	margin-right:20% !important;
 	margin-top:0% !important;	
 }
 
-#wb article{	
+#canines article{	
 	margin-top: -23% !important;
 	text-align: center !important;	
 	width:100% !important;  			
 }
 
-#wb article h1{	
+#canines article h1{	
 	margin-top:15% !important; 		
 }
 
-#wb article h2{
+#canines article h2{
 	margin-top:-30% !important;
 }
 
-#wb figure{
+#canines figure{
 	margin-top:10% !important;
 	width:100% !important; 		
 }
 
-#wb figure img{
-	margin-left:15% !important;
-	margin-right:15% !important;
+#canines figure img{
+	margin-left:20% !important;
+	margin-right:10% !important;
 	margin-top:15% !important;	
 }
 
@@ -1258,12 +1406,18 @@ article p, article p:active, article .show{
 	padding:0;
 }
 
-#contact figure{
-	margin-left:5% !important;
+#contact article{
+	margin-top:20% !important;
 }
 
-#contact figure img{
-	margin-top:-10% !important;	
+#contact figure{
+	margin-top:-12% !important;	
+	margin-left:5% !important;		
+}
+
+#contact figure form{
+	margin-top:-5% !important;	
+	margin-left:37% !important;	
 	width:90% !important;	
 }
 
@@ -1345,18 +1499,7 @@ article p, article p:active, article .show{
  
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 980px) {
-/* .fa-user{
-	margin-left:-95px !important;	
-}
-*/
-}
-
 @media screen and (max-width: 768px){
-/*.scroll{	
-	margin-top:-130px !important;		
-}*/
-
 .scroll svg{	
 	width:5% !important;		
 } 
@@ -1371,15 +1514,15 @@ article p, article p:active, article .show{
 	text-align: center !important;	
 }
 
-#ccf article{
+#allblacks article{
 	margin-top:0px !important;		
 }
 
-#dogs figure{
+#whistlebox figure{
 	margin-top:-17% !important;
 }
 
-#el3phant article{
+#posse article{
 	margin-top:0px !important;
 }
 
@@ -1391,7 +1534,7 @@ article p, article p:active, article .show{
 	margin-top:0px !important;
 }
 
-#wb figure{
+#canines figure{
 	margin-top:-20% !important;
 }
 
@@ -1405,10 +1548,6 @@ article p, article p:active, article .show{
 
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 768px) {
-  
-}
-
 @media screen and (max-width: 736px){
 .containerHead {    
     margin-top: -50% !important;
@@ -1419,10 +1558,22 @@ article p, article p:active, article .show{
 	display: none;	
 }
 
+#allblacks figure img{
+	margin-top:8% !important;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 736px) {
-  
+#spotx figure img{
+	margin-top:8% !important;
+}
+
+#contact figure{
+	margin-top:-80% !important;
+}
+
+#contact figure form{
+	margin-left:28% !important;
+}
+
 }
 
 @media screen and (max-width: 480px){
@@ -1436,43 +1587,42 @@ nav #myImage2{
 
 #home nav {    
     margin-top: -30% !important;    
-    margin-left:15% !important;
-    width: 110% !important;    
+    margin-left:-15% !important;
+    width: 100% !important;    
 }
 
 svg#circle {
-  height: 120px !important;
-  width: 120px !important; 
-  margin-left:0px !important;
+  	height: 120px !important;
+  	width: 120px !important; 
+  	margin-left:0px !important;
 } 
 
 .containerHead {
-    position: absolute !important;
-    margin-top: 40% !important;
-    margin-left:8% !important;
-    padding: 0 5% 0 5% !important;
-    width: 100% !important;
-    height: 100vh !important;
+   	position: absolute !important;
+   	margin-top: 40% !important;
+   	margin-left:0 !important;
+   	padding: 0 5% 0 5% !important;
+   	width: 100% !important;
+   	height: 100vh !important;
 }
 
-#home img{   
-  width:90% !important;
-  margin-top:5% !important;
-  margin-left: 10% !important;  
+#home img{  	
+  	margin-top:-5% !important;  	
+  	margin-left:0 !important;
+  	width:100% !important;   
 } 
+
+header img{
+	margin-right: none !important;
+}
  
 .dropdown-content{  
     min-width: 40%;  
 }
 
-header img{
-	width:50% !important;
-	margin-top:40% !important;
-	margin-left:30% !important;
-}
-
 nav{	
-	margin-top: 45% !important;		
+	margin-top: 45% !important;	
+	margin-left:-20% !important;	
 }
 
 #circle{
@@ -1511,52 +1661,51 @@ article button{
 	margin-top:10px !important;	
 }
 
-#ccf figure{
+#allblacks figure{
 	margin-left:0 !important;
 	height:auto !important;
-	margin-top:-10% !important;	
+	margin-top:-18% !important;	
 }
 
-#ccf figure img{	
+#allblacks figure img{	
 	width: 100% !important;	
-	margin-top:-5% !important;	
+	margin-top:-10% !important;	
 	margin-left: 0% !important;
 }
 
-#dogs figure{
+#whistlebox figure{
 	margin-top:10% !important;	
-	margin-left:0% !important;
-	padding-left:100px !important;	
+	margin-left:15% !important;	
 }
 
-#dogs figure img{	
-	position: relative;	
-	margin-left: 10% !important;
-	width:100% !important;		
-	z-index: 500;	
+#whistlebox figure img{		
+	margin-left: 5% !important;
+	margin-right:25% !important;	
+	width:80% !important;
 }
 
-#el3phant figure{
+#posse figure{
 	margin-left:0 !important;
 	height:auto !important;
-	margin-top:-10% !important;	
+	margin-top:-20% !important;	
 }
 
-#el3phant figure img{	
+#posse figure img{	
 	width: 100% !important;	
 	margin-top:-5% !important;	
 	margin-left: 0% !important;
 }
 
 #fou figure{
-	margin-top:10% !important;	
+	margin-top:20% !important;	
 	margin-left:0% !important;
 	padding-left:100px !important;	
 }
 
 #fou figure img{	
 	position: relative;	
-	margin-left: 10% !important;
+	margin-left: 20% !important;
+	margin-right: 10% !important;
 	width:100% !important;		
 	z-index: 500;	
 }
@@ -1564,7 +1713,7 @@ article button{
 #spotx figure{
 	margin-left:0 !important;
 	height:auto !important;
-	margin-top:-10% !important;	
+	margin-top:-18% !important;	
 }
 
 #spotx figure img{	
@@ -1573,55 +1722,107 @@ article button{
 	margin-left: 0% !important;
 }
 
-#wb figure{
-	margin-top:10% !important;	
+#canines figure{
+	margin-top:20% !important;	
 	margin-left:0% !important;
 	padding-left:100px !important;	
 }
 
-#wb figure img{	
+#canines figure img{	
 	position: relative;	
-	margin-left: 10% !important;
+	margin-left: 15% !important;
+	margin-right:15% !important;
 	width:100% !important;		
 	z-index: 500;	
 }
 
 #contact figure{
-	margin-top:-50% !important;	
+	margin-top:-120% !important;	
 }
 
+#contact figure form{
+	margin-top:-8% !important;
+	margin-left:15% !important;
+	margin-right:15% !important;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 480px) {
-  
 }
 
 @media screen and (max-width: 375px){
-.containerHead {   
-    margin-top: 40% !important;
-    margin-left:3% !important;    
+.containerHead {
+   	position: absolute !important;
+   	margin-top: 40% !important;
+   	margin-left:0 !important;
+   	padding: 0 5% 0 5% !important;
+   	width: 100% !important;
+   	height: 100vh !important;
+}
+
+#home img{  	
+  	margin-top:-5% !important;  	
+  	margin-left:0 !important;
+  	width:100% !important;   
+} 
+
+#home nav{    
+    margin-top: -30% !important;    
+    margin-left:32% !important;
+    margin-right:-3% !important;
+    width: 110% !important; 
+}
+
+#whistlebox figure{
+	margin-top:20% !important;
+}
+
+#whistlebox figure img{
+	margin-top:20% !important;
+	margin-left:5% !important;
+	margin-right:25% !important;	
+}
+
+#fou figure img{
+	margin-top:20% !important;
+	margin-left:15% !important;
+	margin-right:15% !important;
+}
+
+#canines figure img{
+	margin-top:20% !important;	
 }
 
 #contact figure{
-	margin-top:-30% !important;
+	margin-top:-130% !important;
+	margin-left:0 !important;
 }
 
+#contact figure form{
+	margin-top:-15% !important;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 375px) {
-  
 }
 
 @media screen and (max-width: 360px){
-.containerHead{    
-  margin-top: 40% !important;
-  margin-left:35px !important;
-  padding: 0 5% 0 5% !important;    
+.containerHead {
+   	position: absolute !important;
+   	margin-top: 40% !important;
+   	margin-left:0 !important;
+   	padding: 0 5% 0 5% !important;
+   	width: 100% !important;
+   	height: 100vh !important;   	
 }
 
-#home nav {    
-    margin-top:-35% !important;    
-    width:120% !important;   
+#home img{  	
+  	margin-top:-5% !important;  	
+  	margin-left:5% !important;
+  	width:100% !important;    	
+} 
+
+#home nav{    
+    margin-top: -30% !important;    
+    margin-left:32% !important;
+    margin-right:-10% !important;
+    width: 120% !important;     
 }
 
 svg#circle {
@@ -1630,30 +1831,35 @@ svg#circle {
   margin-left:0px !important;  
 } 
 
-#home img{   
-  width:90% !important;
-  margin-top:-5% !important;
-  margin-left: 8% !important;  
-} 
-
-header img{
-	margin-top:20% !important;
+#contact figure{
+	margin-top:-110% !important;	
 }
 
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 360px) {
-  
 }
 
 @media screen and (max-width: 320px){
-.containerHead{      
-  margin-left:80px !important;      
+.containerHead {
+   	position: absolute !important;
+   	margin-top: 40% !important;
+   	margin-left:0 !important;
+   	padding: 0 5% 0 5% !important;
+   	width: 100% !important;
+   	height: 100vh !important;   	
 }
 
-#home nav {     
-    width: 130% !important;      
-}
+#home img{  	
+  	margin-top:-5% !important;    	
+  	margin-right:-5% !important;
+  	width:99% !important; 
+  	float: right;  	
+} 
+
+#home nav{    
+    margin-top: -30% !important;    
+    margin-left:30% !important;
+    margin-right:-7% !important;
+    width: 110% !important; 
+   }
 
 svg#circle { 
   margin-left:-20px !important;  
@@ -1663,10 +1869,37 @@ svg#circle {
   margin-left: -10% !important;  
 } 
 
+#allblacks figure img{
+	margin-left:30% !important;
+	margin-right:0% !important;	
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 320px) {
-  
+#posse figure img{
+	margin-left:30% !important;
+	margin-right:0% !important;	
 }
+
+#fou figure img{
+	margin-left:13% !important;
+	margin-right:17% !important;		
+}
+
+#spotx figure img{
+	margin-left:30% !important;
+	margin-right:0% !important;	
+}
+
+#canines figure img{
+	margin-left:10% !important;
+	margin-right:20% !important;	
+}
+
+#contact figure{
+	margin-top:-110% !important;	
+}
+
+}
+
+
 
 

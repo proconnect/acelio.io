@@ -29,7 +29,8 @@ jQuery(document).ready(function($){
 	//go to next section
 	function nextSection() {
 		if (!animating) {
-			if ($('.is-visible[data-type="slider-item"]').next().length > 0) smoothScroll($('.is-visible[data-type="slider-item"]').next());
+			if ($('.is-visible[data-type="slider-item"]').next().length > 0)
+			 smoothScroll($('.is-visible[data-type="slider-item"]').next());
 		}
 	}
 
@@ -53,7 +54,7 @@ jQuery(document).ready(function($){
 	//update the visibility of the navigation arrows
 	function checkNavigation() {
 		( $(window).scrollTop() < $(window).height()/2 ) ? $('.cd-vertical-nav .cd-prev').addClass('inactive') : $('.cd-vertical-nav .cd-prev').removeClass('inactive');
-		( $(window).scrollTop() > $(document).height() - 3*$(window).height()/2 ) ? $('.cd-vertical-nav .cd-next').addClass('inactive') : $('.cd-vertical-nav .cd-next').removeClass('inactive');
+		( $(window).scrollTop() > $(document).height() - 4*$(window).height()/2 ) ? $('.cd-vertical-nav .cd-next').addClass('inactive') : $('.cd-vertical-nav .cd-next').removeClass('inactive');
 	}
 
 	//detect which section is visible in the viewport

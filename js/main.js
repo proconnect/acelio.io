@@ -14,7 +14,7 @@
  		}else{
  			$("nav").removeClass("fixed"); 	
  		}
-   
+     
  	});    
   
  	// About Me Section  
@@ -40,28 +40,28 @@
 			 }	 		
  	}); 
 
-	 $('#ccf article .readmore').click(function(e){
+	 $('#allblacks article .readmore').click(function(e){
 	 		e.preventDefault();
 	 		if(!$(this).hasClass('active')){
-				 	$('#ccf article .hide').slideToggle('fast').addClass('active');			 	
+				 	$('#allblacks article .hide').slideToggle('fast').addClass('active');			 	
 				 } else {
 				 	$(this).removeClass('active');
 				 }	 		
 	 	});
 
-	 $('#dogs article .readmore').click(function(e){
+	 $('#canines article .readmore').click(function(e){
 	 		e.preventDefault();
 	 		if(!$(this).hasClass('active')){
-	 			$('#dogs article .hide').slideToggle('fast').addClass('active');
+	 			$('#canines article .hide').slideToggle('fast').addClass('active');
 	 		} else {
 	 			$(this).remnoveClass('active');
 	 		}
 	 }); 
 
-	 $('#el3phant article .readmore').click(function(e){
+	 $('#posse article .readmore').click(function(e){
 	 		e.preventDefault();
 	 		if(!$(this).hasClass('active')){
-	 			$('#el3phant article .hide').slideToggle('fast').addClass('active');	 			
+	 			$('#posse article .hide').slideToggle('fast').addClass('active');	 			
 	 		} else {
 	 			$(this).removeClass('active');
 	 		}
@@ -86,10 +86,10 @@
 	 		}
 	 });
 
-	 $('#wb article .readmore').click(function(e){
+	 $('#whistlebox article .readmore').click(function(e){
 	 		e.preventDefault();
 	 		if(!$(this).hasClass('active')){
-	 			$('#wb article .hide').slideToggle('fast').addClass('active');	 			
+	 			$('#whistlebox article .hide').slideToggle('fast').addClass('active');	 			
 	 		} else {
 	 			$(this).removeClass('active');
 	 		}
@@ -104,7 +104,7 @@
 	 		}
 	 });
 
-
+	
 	 // Block #WB button from firing!
 
 		//  $(window).resize(function(){     

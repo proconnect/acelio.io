@@ -10,7 +10,7 @@ Primary style
 }
  
 html, body {
-  height: 100%;   
+  height: 100%;    
 }
   
 html { 
@@ -44,7 +44,7 @@ Main Components
 
 -------------------------------- */
 #gap{
-  margin-top:150px;
+  margin-top:120px;
   background-color: #fff;  
 } 
 
@@ -108,13 +108,32 @@ Main Components
 #fillIt p{  
   display: block;
   color: #fff;
-  margin-top:-50%;
-  /*border:2px solid #ffac00;*/
+  margin-top:-50%;  
+ /*border:2px solid #ffac00;*/
 }
 
   .cd-header h1 {
+    color:#fff;
+    margin-top:-1%;
+    margin-left:15%;
     font-size: 3.6rem;
-    font-weight: normal;
+    font-weight: 500; 
+  /*border:2px solid #ffac00;*/   
+  }
+
+  .cd-header h2{
+    position: absolute;
+    color:#fff;
+    margin-top:-36.4%;
+    margin-left:57%;    
+    font-size: 3.0rem;
+    font-weight: 300; 
+  /*border:2px solid #ffac00;*/
+  }
+
+  #fillIt p span, .cd-content p span{
+    font-weight: semi-bold;
+    /* border:2px solid #ffac00; */
   }
 
 .cd-fixed-background {
@@ -125,7 +144,9 @@ Main Components
   background-position: center center;
 }
 .cd-fixed-background h2, .cd-fixed-background p {
-  color: #000;
+  color: #27C0C1 !important;
+  /* font-size:1.8em !important;   */
+  font-weight:500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -184,10 +205,10 @@ Main Components
   }
   .cd-fixed-background h2 {
     font-size: 3.6rem;
-    font-weight: 300;
+    font-weight: 400;    
   }
   .cd-fixed-background p {
-    font-size: 1.8rem;
+    font-size: 1.4em;
     line-height: 1.8;
   }
   .cd-fixed-background .cd-content {
@@ -283,6 +304,8 @@ Main Components
   display: block;
   width:40%;
   margin-top:-35%;
+  line-height: 1.4;
+  font-size: 1.4em;
   /*border:2px solid #ffac00;*/
 }
 

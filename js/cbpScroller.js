@@ -10,7 +10,7 @@
  */
 ;( function( window ) {
 	
-	'use strict';
+	'use strict'; 
 
 	var docElem = window.document.documentElement;
 
