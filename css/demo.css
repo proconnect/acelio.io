@@ -2,8 +2,8 @@
 Author Styles:
 Ace Lio 
 2018
-*/ 
-
+*/  
+ 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @font-face {
 	font-family: 'bpicons';
@@ -15,7 +15,7 @@ Ace Lio
 	font-weight: normal; 
 	font-style: normal;
 } 
-
+ 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0;}
 
@@ -26,8 +26,10 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 body { 
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #fff;   
+    /*overflow-x: hidden;*/
+
 }  
- 
+
 .fa-lg {
    display: none !important;   
 }
@@ -42,7 +44,7 @@ a:hover {
 }
  
 br{
-	margin-top:5px;
+	margin-top:5px;file:///Users/acelio/Desktop/PORTFOLIO/index.html#bio
 } 
 
 article{	
@@ -63,7 +65,7 @@ figure{
 }
 
 figure img{
-	margin-top:20% !important;
+	margin-top:23% !important;
 	width:70% !important;	
 	border-radius:10px;	
 	z-index: 500;
@@ -80,7 +82,7 @@ figure img{
 }
 
 #fou figure img{	
-	margin-top:16% !important;
+	margin-top:20% !important;
 	width:60% !important;
 }
 
@@ -145,7 +147,7 @@ h2 {
 }
 
 #posse figure img{
-	margin-top:120px !important;
+	margin-top:13% !important;
 }
 
 #fou article{
@@ -169,11 +171,16 @@ h2 {
 }
 
 #contact article{
-	margin-top:175px !important;
+	margin-top:175px !important;	
 }
 
 #contact figure{
-	margin-top:175px !important;
+	margin-top:175px !important;	
+}
+
+#contact figure form{
+	margin-top:-3.5% !important;
+  	/*border:2px solid #ffac00;*/
 }
 
 .container{	
@@ -758,9 +765,16 @@ li .resumeNext:hover{
 	display: none;
 }
 
+}
+
 @media screen and (max-width: 1798px) {
 figure img{	
 	margin-top:30% !important;	
+}
+
+#allblacks figure img{
+	margin-top:25% !important;
+	border:2px solid yellow;
 }
 
 #whistlebox figure img{
@@ -768,7 +782,7 @@ figure img{
 }
 
 #posse figure img{
-	margin-top:19% !important;
+	/*margin-top:20% !important;*/
 }
 
 #fou figure img{
@@ -785,8 +799,65 @@ figure img{
 
 #contact figure{
 	margin-top:11% !important;
+	border:2px solid #000;
+}
+
+#contact figure form{
+	margin-top:-8 !important;	
 }
 	
+}
+
+@media screen and (max-width: 1692px) {
+#spotx figure img{
+	margin-top:28% !important;
+}
+
+}
+
+@media screen and (max-width: 1648px) {
+#allblacks figure img{
+	margin-top:25% !important;	
+}
+
+#whistlebox figure img{
+	margin-top:25% !important;
+}
+
+#fou figure img{
+	margin-top:23% !important;
+}
+
+}
+
+@media screen and (max-width: 1528px) {
+#allblacks figure img{
+	margin-top:28% !important;	
+}
+
+#spotx figure img{
+	margin-top:31% !important; 
+}
+
+}
+
+@media screen and (max-width: 1496px) {
+#allblacks figure img{
+	margin-top:28% !important;	
+}
+
+#whistlebox figure img{
+	margin-top:30% !important;	
+}
+
+#posse figure img{
+	margin-top:17% !important;
+}
+
+#fou figure img{
+	margin-top:27% !important;
+}
+
 }
 
 @media screen and (max-width: 1366px) {
@@ -803,7 +874,7 @@ figure img{
 }
 
 #allblacks figure img{
-	margin-top:160px !important;
+	margin-top:30% !important;
 }
 
 #whistlebox article{
@@ -827,7 +898,7 @@ figure img{
 }
 
 #posse figure img{
-	margin-top:60px !important;
+	margin-top:8% !important;
 }
 
 #fou article{
@@ -839,7 +910,7 @@ figure img{
 }
 
 #fou figure img{
-	margin-top:160px !important;
+	margin-top:28% !important;
 }
 
 #spotx article{
@@ -874,6 +945,17 @@ figure img{
 	margin-top:150px !important;
 }
 	
+}
+
+@media screen and (max-width: 1306px) {
+#fou figure img{
+	margin-top:32% !important;
+}
+
+#spotx figure img{
+	width:65% !important;
+}
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -911,7 +993,7 @@ figure img{
 }
 
 #posse figure img{
-	margin-top:60px !important;
+	margin-top:10% !important;
 }
 
 #fou article{
@@ -935,7 +1017,8 @@ figure img{
 }
 
 #spotx figure img{
-	margin-top:170px !important;
+	margin-top:29% !important;
+	width:70% !important;
 }
 
 #canines article{
@@ -1040,11 +1123,14 @@ article p{
 	margin-top:150px !important;
 }
 
-#contact figure form{
-	margin-top:-15px !important;
+} 
+
+@media screen and (max-width: 1080px){
+#spotx figure img{
+	margin-top:30% !important;
 }
 
-} 
+}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 980px) {
 .containerHead {   
@@ -1415,8 +1501,7 @@ article p, article p:active, article .show{
 	margin-left:5% !important;		
 }
 
-#contact figure form{
-	margin-top:-5% !important;	
+#contact figure form{	
 	margin-left:37% !important;	
 	width:90% !important;	
 }
@@ -1567,10 +1652,11 @@ article p, article p:active, article .show{
 }
 
 #contact figure{
-	margin-top:-80% !important;
+	margin-top:-100% !important;	
 }
 
 #contact figure form{
+	margin-top:-8% !important;
 	margin-left:28% !important;
 }
 
