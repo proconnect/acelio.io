@@ -346,7 +346,7 @@ strong{
 	line-height: 30px;
 	font-weight:bold;
 }
-
+ 
 article h2{
 	z-index: 5 !important;
 }
@@ -368,17 +368,24 @@ svg#circle {
 
 .scroll{
 	position: absolute;
-	margin-top:-150px !important;	
-	z-index: 6000;	
+	margin:-130px 0px !important;	
+	z-index: 6000;		
 }
 
 .scroll svg{
-	margin-left:48.5% !important;	
+	margin-left:48.5% !important;		
 	width:2% !important;	
 	cursor: pointer;
 } 
 
+.fb-like{	
+	margin-top:-30% !important;
+	float:left !important;
+	padding-left:60% !important;	
+}
+
 .bounce {
+	margin-top:90px !important;
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
@@ -781,10 +788,6 @@ figure img{
 	margin-top:25% !important;
 }
 
-#posse figure img{
-	/*margin-top:20% !important;*/
-}
-
 #fou figure img{
 	margin-top:25% !important;
 }
@@ -811,6 +814,10 @@ figure img{
 @media screen and (max-width: 1692px) {
 #spotx figure img{
 	margin-top:28% !important;
+}
+
+.fb-like{		
+	padding-left:47% !important;		
 }
 
 }
@@ -1041,6 +1048,10 @@ figure img{
 	margin-top:120px !important;
 }
 
+.fb-like{		
+	padding-left:40% !important;	
+}
+
 }
 
 @media screen and (max-width: 1228px) {
@@ -1123,6 +1134,10 @@ article p{
 	margin-top:150px !important;
 }
 
+.fb-like{		
+	padding-left:30% !important;	 	
+}
+
 } 
 
 @media screen and (max-width: 1080px){
@@ -1196,6 +1211,11 @@ header img{
 }
 
 /* eof */
+
+.fb-like{		
+	padding-left:50% !important;
+	padding-right:25% !important;	 	
+}
 
 }
 
@@ -1656,8 +1676,12 @@ article p, article p:active, article .show{
 }
 
 #contact figure form{
-	margin-top:-8% !important;
+	margin-top:76% !important;
 	margin-left:28% !important;
+}
+
+.fb-like{		
+	margin-top:-25% !important;	
 }
 
 }
@@ -1830,6 +1854,11 @@ article button{
 	margin-top:-8% !important;
 	margin-left:15% !important;
 	margin-right:15% !important;
+}
+
+.fb-like{	
+	margin-top:0% !important;	
+	padding-left:10% !important;	 	
 }
 
 }

@@ -18,7 +18,16 @@
 		<link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">	 
 		<script src="js/modernizr.custom.js"></script>	 
 	</head>           
-	<body>              
+	<body> 
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=126321711418621&autoLogAppEvents=1';
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>             
 		<div id="home" class="container">      
 				<header class="clearfix">  
 				<div class="containerHead">				  
@@ -55,8 +64,8 @@
 							     </g>
 							</svg>
 						</nav> 
-					</div>					 
-
+					</div>
+					
 					<div class="nav">
 						<div id="container">
 						  <i class="fa fa-bars fa-lg" id="hamburger" onclick="myFunction(this)">	
@@ -84,7 +93,7 @@
 					</div>					  									
 			</header>			
 				<div class="scroll">
-					<div class="bounce">
+					<div class="bounce">							
 						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 viewBox="-911 1203 96 96" style="enable-background:new -911 1203 96 96;" xml:space="preserve">
 								<style type="text/css">
@@ -96,6 +105,10 @@
 				</div>	
 			</div>	
 			
+			<!-- <div class="fb-like" data-href="http://acelio.co.nz/" data-layout="standard" 
+			data-action="like" data-size="small" data-show-faces="true" data-share="true">
+			</div> -->
+
 			<div id="cbp-so-scroller" class="cbp-so-scroller">
 				<section id="bio" class="cbp-so-section" style="background-color:#fff; color:#7f7f7f;; margin-top:-5%;">
 					<article class="cbp-so-side cbp-so-side-left" >
@@ -220,7 +233,11 @@
               	<section id="contact" class="cbp-so-section" style="background-color:#fff; color:#000;">
 					<article class="cbp-so-side cbp-so-side-left">
 						<h1 style="color:#a72b63;"></h1>
-						<h2 style="margin-top:-29%; color:#7f7f7f;">Lets Work <strong style="color:#7f7f7f;">Together</strong></h2>
+						<h2 style="margin-top:-29%; color:#7f7f7f;">Lets Work <strong style="color:#7f7f7f;">Together</strong>						
+						</h2>
+						<div class="fb-like" data-href="http://acelio.co.nz/" data-layout="standard" 
+						data-action="like" data-size="small" data-show-faces="true" data-share="true">
+						</div>	
 						<p class="show"><!-- 2017 -->	
 							<div class="sm">
 								<div class="front-face"></div> 	
@@ -234,7 +251,7 @@
 		 								   Ace Lio | <a href="mailto:info@acelio.co.nz">info@acelio.co.nz</a><br>
 										</div>											
 								</form>								
-							</div>												
+							</div>																		
 					</figure>				
 				</section>           	
 			</div>
